@@ -1,45 +1,1710 @@
-<!doctype html>
+﻿<!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="小巴電腦提供客製化電腦，陪你組出理想效能與風格。">
-  <title>小巴電腦｜組出你的理想電腦</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="小巴電腦提供客製化電腦，陪你組出理想效能與風格。專為電腦組裝者打造，自由選配、透明報價、專業燒機測試。">
+  <title>小巴電腦客製組裝</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
   <style>
-    :root{--ink:#20242b;--muted:#68717d;--brand:#5367e8;--brand-hover:#3e50c8;--line:#e8eaee;--soft:#f6f7fb;--deep:#242938;--max:1120px;--font:"Noto Sans TC","Microsoft JhengHei",sans-serif}
-    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:76px}body{margin:0;color:var(--ink);background:#fff;font:16px/1.65 var(--font);-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}:focus-visible{outline:3px solid #9aa6ff;outline-offset:4px}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
-    .site-header{position:sticky;z-index:5;top:0;border-bottom:1px solid var(--line);background:#ffffffdf;backdrop-filter:blur(14px)}.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:10px;font-weight:800}.brand-mark{width:36px;height:36px;display:grid;place-items:center;border-radius:12px;background:var(--brand);color:#fff}.nav-links{display:flex;align-items:center;gap:28px;font-size:14px;font-weight:600}.nav-links>a:not(.nav-cta):hover{color:var(--brand)}.nav-cta,.button{min-height:46px;display:inline-flex;align-items:center;justify-content:center;padding:0 21px;border-radius:999px;font-weight:700;transition:transform .2s,background .2s,color .2s,box-shadow .2s}.nav-cta,.button-primary{color:#fff;background:var(--brand);box-shadow:0 7px 18px #5367e82b}.nav-cta:hover,.button-primary:hover{background:var(--brand-hover);transform:translateY(-2px)}
-    .hero{overflow:hidden;background:radial-gradient(ellipse at 78% 42%,#e8ebff 0,rgba(232,235,255,.62) 28%,transparent 59%),linear-gradient(120deg,#fff 35%,#f7f8ff)}.hero-grid{min-height:600px;display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding:64px 0}.eyebrow{margin:0 0 14px;color:var(--brand);font-size:13px;font-weight:800;letter-spacing:.08em}.hero h1{max-width:650px;margin:0;font-size:clamp(2.5rem,5vw,4.35rem);line-height:1.16;letter-spacing:-.045em}.hero h1 span{color:var(--brand)}.hero-copy>p:not(.eyebrow){max-width:560px;margin:22px 0 0;color:var(--muted);font-size:17px}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.button-secondary{border:1px solid var(--line);background:#fff}.button-secondary:hover{border-color:#bdc5ff;color:var(--brand);transform:translateY(-2px)}
-    .hero-art{position:relative;min-height:420px;display:grid;place-items:center}.art-glow{position:absolute;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,#dce1ff,rgba(220,225,255,.35) 54%,transparent 72%)}.pedestal{position:absolute;bottom:52px;width:390px;height:95px;border-radius:50%;background:linear-gradient(145deg,#fff,#e6e9f7);box-shadow:0 25px 35px #303b6b18;transform:rotate(-8deg)}.tower{position:relative;z-index:1;width:206px;height:310px;padding:16px 13px;display:flex;gap:12px;border:5px solid #252938;border-radius:20px;background:linear-gradient(115deg,#33394b,#171a24 68%);box-shadow:18px 26px 40px #20242b35;transform:rotate(4deg)}.glass{flex:1;display:flex;flex-direction:column;justify-content:space-evenly;align-items:center;border:1px solid #7781aa66;border-radius:12px;background:linear-gradient(135deg,#a7aef222,#171b2b)}.fan{width:96px;height:96px;display:grid;place-items:center;border:5px solid #8791ff;border-radius:50%;background:radial-gradient(circle,#ccd0ff 0 8%,#626ff1 10% 18%,#1c2038 20% 60%,#8994ff 62% 66%,#292d49 68%);box-shadow:0 0 22px #6675ff99,inset 0 0 15px #7d88ff77}.front{width:31px;display:flex;align-items:center;flex-direction:column;gap:11px;padding-top:10px}.power{width:10px;height:10px;border:2px solid #aab0ff;border-radius:50%;box-shadow:0 0 9px #9ba4ff}.led{width:4px;height:4px;border-radius:50%;background:#7cf0d2;box-shadow:0 0 8px #7cf0d2}.mesh{width:23px;height:190px;border-radius:8px;background:repeating-linear-gradient(0deg,#10121a 0 4px,#373b4b 5px 6px)}.spec{position:absolute;z-index:2;padding:14px 17px;border:1px solid #fff;border-radius:15px;background:#ffffffeb;box-shadow:0 12px 30px #353d7b1c}.spec strong,.spec span{display:block}.spec strong{font-size:14px}.spec span{margin-top:3px;color:var(--muted);font-size:12px}.spec-one{top:48px;left:0}.spec-two{right:0;bottom:38px}
-    .section{padding:82px 0}.section-heading{max-width:700px;margin:0 auto 38px;text-align:center}.section-heading h2{margin:0;font-size:clamp(1.8rem,3vw,2.6rem);line-height:1.3;letter-spacing:-.025em}.section-heading>p:last-child{margin:13px 0 0;color:var(--muted)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{padding:26px;border:1px solid var(--line);border-radius:18px;background:#fff;box-shadow:0 10px 32px #20242b08}.feature-icon{width:52px;height:52px;display:grid;place-items:center;margin-bottom:18px;border-radius:16px;background:#e8ebff;font-size:25px}.card h3{margin:0 0 9px;font-size:19px}.card p{margin:0;color:var(--muted);font-size:15px}.builds-section{background:var(--soft)}.build-card{min-height:270px;display:flex;flex-direction:column;align-items:flex-start}.build-emoji{margin-bottom:20px;font-size:42px;line-height:1}.category{display:inline-block;margin-bottom:8px;padding:4px 10px;border-radius:999px;color:var(--brand);background:#e8ebff;font-size:12px;font-weight:700}.build-card .build-link{margin-top:auto;padding-top:22px;color:var(--brand);font-size:14px;font-weight:800}.build-link:hover{color:var(--brand-hover)}
-    .contact-section{padding:70px 0}.contact-panel{padding:58px 28px;border-radius:24px;color:#fff;background:var(--deep);text-align:center}.contact-panel h2{margin:0;font-size:clamp(1.7rem,3vw,2.4rem);line-height:1.3}.contact-panel p{margin:14px auto 25px;color:#c9cbd2}.button-light{color:var(--deep);background:#fff}.button-light:hover{color:var(--brand);transform:translateY(-2px);box-shadow:0 8px 22px #0002}.site-footer{border-top:1px solid var(--line);background:#fff}.footer-content{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px;color:var(--muted);font-size:14px}.footer-content p{margin:0}.footer-copy{color:var(--ink)}
-    @media(max-width:760px){html{scroll-padding-top:68px}.wrap{width:min(560px,calc(100% - 32px))}.nav{height:64px}.nav-links{gap:14px}.nav-item-builds{display:none}.nav-cta{min-height:40px;padding:0 15px;font-size:13px}.hero-grid{min-height:0;grid-template-columns:1fr;gap:18px;padding:58px 0 34px}.hero-copy>p:not(.eyebrow){font-size:16px}.hero-art{min-height:330px;margin-bottom:-25px;transform:scale(.9);transform-origin:top center}.art-glow{width:280px;height:280px}.pedestal{width:310px}.tower{transform:scale(.86) rotate(4deg)}.spec-one{left:1%}.spec-two{right:1%}.section{padding:58px 0}.cards{grid-template-columns:1fr;gap:14px}.build-card{min-height:0}.contact-section{padding:56px 0}.contact-panel{padding:42px 22px}}
-    @media(max-width:420px){.nav-item-about{display:none}.hero h1{font-size:2.45rem}.hero-art{min-height:300px;margin:0 -20px -45px;transform:scale(.82)}.spec{padding:11px 12px}.spec strong{font-size:12px}.spec span{font-size:11px}.footer-content{align-items:flex-start;flex-direction:column;justify-content:center;gap:3px;padding:18px 0;font-size:13px}}
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition-duration:.01ms!important}}
+    /* ==========================================================================
+       CSS 變數系統 - 以「白色」為核心之現代極簡科技美學
+       ========================================================================== */
+    :root {
+      /* 白色系與背景色階 */
+      --bg-body: #ffffff;
+      --bg-surface: #ffffff;
+      --bg-subtle: #f8fafc;
+      --bg-card: #ffffff;
+      --bg-panel: #f1f5f9;
+      --bg-hero: radial-gradient(circle at 75% 30%, #f0f4ff 0%, #fafcff 45%, #ffffff 80%);
+      
+      /* 文字色階 (高對比確保閱讀舒適度) */
+      --text-main: #0f172a;
+      --text-sub: #475569;
+      --text-muted: #64748b;
+      --text-light: #94a3b8;
+      --text-white: #ffffff;
+
+      /* 品牌核心與裝飾點綴 (沉穩藍紫科技色) */
+      --brand-primary: #4f46e5;
+      --brand-primary-hover: #4338ca;
+      --brand-light: #eef2ff;
+      --brand-border: #e0e7ff;
+      --brand-accent: #06b6d4;
+
+      /* 邊框與分割線 */
+      --border-color: #e2e8f0;
+      --border-light: #f1f5f9;
+      --border-focus: #818cf8;
+
+      /* 精緻陰影系統 */
+      --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.05);
+      --shadow-md: 0 4px 16px -2px rgba(15, 23, 42, 0.06), 0 2px 6px -1px rgba(15, 23, 42, 0.03);
+      --shadow-lg: 0 12px 32px -4px rgba(15, 23, 42, 0.08), 0 4px 12px -2px rgba(15, 23, 42, 0.04);
+      --shadow-xl: 0 24px 48px -8px rgba(79, 70, 229, 0.12), 0 8px 24px -4px rgba(15, 23, 42, 0.06);
+
+      /* 版面與圓角 */
+      --max-width: 1160px;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --radius-full: 9999px;
+      --font-base: "Noto Sans TC", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      --font-mono: "JetBrains Mono", monospace;
+    }
+
+    /* ==========================================================================
+       基礎重置與排版
+       ========================================================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px;
+    }
+
+    body {
+      background-color: var(--bg-body);
+      color: var(--text-main);
+      font-family: var(--font-base);
+      line-height: 1.68;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    button, input, select, textarea {
+      font: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      width: min(var(--max-width), calc(100% - 40px));
+      margin-inline: auto;
+    }
+
+    /* ==========================================================================
+       按鈕與通用元件
+       ========================================================================== */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 48px;
+      padding: 0 24px;
+      border-radius: var(--radius-full);
+      font-size: 0.95rem;
+      font-weight: 700;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      text-align: center;
+      line-height: 1;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background-color: var(--brand-primary);
+      color: #ffffff;
+      box-shadow: 0 6px 20px rgba(79, 70, 229, 0.28);
+    }
+
+    .btn-primary:hover {
+      background-color: var(--brand-primary-hover);
+      box-shadow: 0 8px 24px rgba(79, 70, 229, 0.38);
+    }
+
+    .btn-secondary {
+      background-color: #ffffff;
+      color: var(--text-main);
+      border-color: var(--border-color);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--brand-primary);
+      color: var(--brand-primary);
+      background-color: var(--brand-light);
+    }
+
+    .btn-white {
+      background-color: #ffffff;
+      color: var(--brand-primary);
+      box-shadow: var(--shadow-md);
+    }
+
+    .btn-white:hover {
+      background-color: #f8fafc;
+      color: var(--brand-primary-hover);
+    }
+
+    .section-tag {
+      display: inline-block;
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--brand-primary);
+      background-color: var(--brand-light);
+      padding: 4px 14px;
+      border-radius: var(--radius-full);
+      margin-bottom: 14px;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 52px;
+    }
+
+    .section-header h2 {
+      font-size: clamp(2rem, 3.2vw, 2.75rem);
+      font-weight: 800;
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+      color: var(--text-main);
+      margin-bottom: 12px;
+    }
+
+    .section-header p {
+      color: var(--text-sub);
+      font-size: 1.05rem;
+    }
+
+    /* ==========================================================================
+       頂部導覽列 (Sticky Header)
+       ========================================================================== */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background-color: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-color);
+      transition: background-color 0.3s;
+    }
+
+    .nav-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 74px;
+      gap: 24px;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--text-main);
+      letter-spacing: -0.02em;
+    }
+
+    .brand-badge {
+      display: grid;
+      place-items: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, var(--brand-primary), #6366f1);
+      color: #ffffff;
+      font-weight: 900;
+      font-size: 1.05rem;
+      box-shadow: 0 4px 12px rgba(79, 70, 229, 0.25);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      gap: 28px;
+    }
+
+    .nav-links a:not(.btn) {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-sub);
+      position: relative;
+      padding: 6px 0;
+    }
+
+    .nav-links a:not(.btn):hover {
+      color: var(--brand-primary);
+    }
+
+    .nav-links a:not(.btn)::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: var(--brand-primary);
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.25s ease;
+    }
+
+    .nav-links a:not(.btn):hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+
+    /* ==========================================================================
+       首頁主視覺 (Hero Section)
+       ========================================================================== */
+    .hero-section {
+      position: relative;
+      background: var(--bg-hero);
+      overflow: hidden;
+      padding: 64px 0 88px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      align-items: center;
+      gap: 48px;
+      min-height: 540px;
+    }
+
+    .hero-content {
+      max-width: 600px;
+    }
+
+    .hero-title {
+      font-size: clamp(2.5rem, 4.8vw, 4.2rem);
+      font-weight: 900;
+      line-height: 1.18;
+      letter-spacing: -0.03em;
+      color: var(--text-main);
+      margin-bottom: 20px;
+    }
+
+    .hero-title span {
+      background: linear-gradient(135deg, var(--brand-primary) 0%, #6366f1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-desc {
+      font-size: 1.15rem;
+      color: var(--text-sub);
+      line-height: 1.75;
+      margin-bottom: 32px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 36px;
+    }
+
+    .hero-highlights {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border-color);
+    }
+
+    .highlight-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text-sub);
+    }
+
+    .highlight-icon {
+      color: #10b981;
+      font-size: 1.1rem;
+    }
+
+    /* 純 CSS 繪製：純白海景房客製化主機示意圖 */
+    .hero-art-wrapper {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 440px;
+    }
+
+    .art-halo {
+      position: absolute;
+      width: 380px;
+      height: 380px;
+      background: radial-gradient(circle, rgba(79, 70, 229, 0.12) 0%, rgba(6, 182, 212, 0.08) 50%, transparent 70%);
+      border-radius: 50%;
+      filter: blur(24px);
+    }
+
+    .pc-podium {
+      position: absolute;
+      bottom: 20px;
+      width: 360px;
+      height: 80px;
+      background: radial-gradient(ellipse at center, rgba(226, 232, 240, 0.9) 0%, rgba(255, 255, 255, 0) 72%);
+      border-radius: 50%;
+    }
+
+    .pc-tower {
+      position: relative;
+      z-index: 2;
+      width: 220px;
+      height: 330px;
+      background: linear-gradient(145deg, #ffffff, #f1f5f9);
+      border: 4px solid #cbd5e1;
+      border-radius: 22px;
+      box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12), inset 0 2px 4px rgba(255, 255, 255, 0.9);
+      display: flex;
+      padding: 14px 12px;
+      gap: 10px;
+      transform: rotate(3deg);
+      transition: transform 0.4s ease;
+    }
+
+    .pc-tower:hover {
+      transform: rotate(0deg) scale(1.02);
+    }
+
+    /* 海景房透側鋼化玻璃 */
+    .pc-glass {
+      flex: 1;
+      background: linear-gradient(135deg, rgba(240, 249, 255, 0.5) 0%, rgba(224, 231, 255, 0.25) 100%);
+      border: 1.5px solid rgba(203, 213, 225, 0.8);
+      border-radius: 14px;
+      padding: 12px 6px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .pc-glass::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(45deg, transparent 40%, rgba(255, 255, 255, 0.6) 48%, transparent 54%);
+      transform: rotate(25deg);
+      pointer-events: none;
+    }
+
+    /* ARGB 幻彩風扇 */
+    .pc-fan {
+      width: 84px;
+      height: 84px;
+      border-radius: 50%;
+      border: 3px solid #ffffff;
+      background: radial-gradient(circle, #e0e7ff 0%, #818cf8 25%, #4f46e5 55%, #1e1b4b 90%);
+      box-shadow: 0 0 18px rgba(99, 102, 241, 0.7), inset 0 0 10px rgba(255, 255, 255, 0.8);
+      animation: spinFan 6s linear infinite;
+      position: relative;
+    }
+
+    @keyframes spinFan {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .pc-fan::after {
+      content: "";
+      position: absolute;
+      inset: 28px;
+      background: #ffffff;
+      border-radius: 50%;
+      box-shadow: 0 0 8px rgba(79, 70, 229, 0.5);
+    }
+
+    /* 頂級水冷頭指示卡 */
+    .pc-aio-block {
+      width: 48px;
+      height: 48px;
+      background: #0f172a;
+      border: 2px solid #818cf8;
+      border-radius: 50%;
+      box-shadow: 0 0 12px rgba(6, 182, 212, 0.7);
+      display: grid;
+      place-items: center;
+      color: #38bdf8;
+      font-size: 11px;
+      font-family: var(--font-mono);
+      font-weight: 700;
+    }
+
+    /* 機殼前置面板 */
+    .pc-front-panel {
+      width: 26px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      padding-top: 8px;
+    }
+
+    .pc-power {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #ffffff;
+      border: 2px solid var(--brand-primary);
+      box-shadow: 0 0 8px var(--brand-primary);
+    }
+
+    .pc-led {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--brand-accent);
+      box-shadow: 0 0 6px var(--brand-accent);
+    }
+
+    .pc-mesh {
+      width: 18px;
+      height: 200px;
+      border-radius: 6px;
+      background: repeating-linear-gradient(0deg, #e2e8f0 0px, #e2e8f0 3px, #cbd5e1 4px, #cbd5e1 6px);
+    }
+
+    /* 浮動規格標籤卡片 */
+    .spec-card {
+      position: absolute;
+      z-index: 3;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(8px);
+      padding: 12px 18px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-lg);
+      font-size: 0.85rem;
+      animation: floatSpec 4s ease-in-out infinite alternate;
+    }
+
+    .spec-card strong {
+      display: block;
+      color: var(--text-main);
+      font-size: 0.92rem;
+      margin-bottom: 2px;
+    }
+
+    .spec-card span {
+      color: var(--text-muted);
+      font-size: 0.8rem;
+    }
+
+    .spec-card-1 {
+      top: 36px;
+      left: 10px;
+      animation-delay: 0s;
+    }
+
+    .spec-card-2 {
+      bottom: 46px;
+      right: 15px;
+      animation-delay: 2s;
+    }
+
+    @keyframes floatSpec {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(-8px); }
+    }
+
+    /* ==========================================================================
+       品牌特色 (#about)
+       ========================================================================== */
+    .features-section {
+      padding: 96px 0;
+      background-color: #ffffff;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .feature-card {
+      background: #ffffff;
+      padding: 36px 30px;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--brand-border);
+      box-shadow: var(--shadow-xl);
+    }
+
+    .feature-icon-wrapper {
+      width: 58px;
+      height: 58px;
+      border-radius: 16px;
+      background-color: var(--brand-light);
+      display: grid;
+      place-items: center;
+      font-size: 1.8rem;
+      margin-bottom: 22px;
+    }
+
+    .feature-card h3 {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--text-main);
+      margin-bottom: 12px;
+    }
+
+    .feature-card p {
+      color: var(--text-sub);
+      font-size: 0.98rem;
+      line-height: 1.7;
+    }
+
+    /* ==========================================================================
+       主機提案 (#builds)
+       ========================================================================== */
+    .builds-section {
+      padding: 96px 0;
+      background-color: var(--bg-subtle);
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .builds-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .build-card {
+      background: #ffffff;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+    }
+
+    .build-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-xl);
+      border-color: var(--brand-border);
+    }
+
+    .build-card-top {
+      padding: 32px 28px 20px;
+      flex-grow: 1;
+    }
+
+    .build-emoji-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 56px;
+      height: 56px;
+      border-radius: 16px;
+      background: var(--bg-subtle);
+      font-size: 2rem;
+      margin-bottom: 16px;
+    }
+
+    .build-category-tag {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--brand-primary);
+      background-color: var(--brand-light);
+      padding: 4px 12px;
+      border-radius: var(--radius-full);
+      margin-bottom: 12px;
+    }
+
+    .build-title {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--text-main);
+      margin-bottom: 10px;
+    }
+
+    .build-desc {
+      color: var(--text-sub);
+      font-size: 0.95rem;
+      line-height: 1.65;
+      margin-bottom: 20px;
+    }
+
+    /* 規格簡約清單 */
+    .build-specs-list {
+      list-style: none;
+      padding: 16px 0;
+      border-top: 1px dashed var(--border-color);
+      margin-bottom: 14px;
+    }
+
+    .build-specs-list li {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.86rem;
+      color: var(--text-sub);
+      padding: 4px 0;
+    }
+
+    .build-specs-list strong {
+      color: var(--text-main);
+      font-family: var(--font-mono);
+    }
+
+    .build-card-footer {
+      padding: 18px 28px 26px;
+      background-color: #fafcff;
+      border-top: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .build-price {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--brand-primary);
+      font-family: var(--font-mono);
+    }
+
+    .build-price small {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .build-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--brand-primary);
+      font-size: 0.95rem;
+      font-weight: 700;
+      transition: gap 0.2s;
+    }
+
+    .build-link:hover {
+      color: var(--brand-primary-hover);
+      gap: 10px;
+    }
+
+    /* ==========================================================================
+       互動式客製化組裝即時估價器 (Interactive PC Builder)
+       ========================================================================== */
+    .configurator-section {
+      padding: 96px 0;
+      background-color: #ffffff;
+    }
+
+    .configurator-box {
+      background: #ffffff;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      padding: 40px;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 40px;
+    }
+
+    .config-options {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .config-group label {
+      display: block;
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 8px;
+    }
+
+    .config-select {
+      width: 100%;
+      height: 48px;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      padding: 0 16px;
+      background-color: var(--bg-subtle);
+      color: var(--text-main);
+      font-size: 0.95rem;
+      transition: border-color 0.2s;
+      outline: none;
+    }
+
+    .config-select:focus {
+      border-color: var(--brand-primary);
+      background-color: #ffffff;
+      box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+    }
+
+    .config-summary {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .config-summary h3 {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--text-main);
+      margin-bottom: 16px;
+    }
+
+    .config-receipt {
+      list-style: none;
+      margin-bottom: 24px;
+    }
+
+    .config-receipt li {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      font-size: 0.9rem;
+      color: var(--text-sub);
+      border-bottom: 1px dashed var(--border-color);
+    }
+
+    .config-total {
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 2px solid var(--border-color);
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+    }
+
+    .config-total span {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .config-total-val {
+      font-size: 1.85rem;
+      font-weight: 900;
+      color: var(--brand-primary);
+      font-family: var(--font-mono);
+    }
+
+    /* ==========================================================================
+       組裝 5 大堅持流程
+       ========================================================================== */
+    .process-section {
+      padding: 80px 0;
+      background-color: #fafcff;
+      border-top: 1px solid var(--border-color);
+    }
+
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+      position: relative;
+    }
+
+    .process-step {
+      background: #ffffff;
+      padding: 24px 18px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+      text-align: center;
+      position: relative;
+    }
+
+    .step-num {
+      width: 32px;
+      height: 32px;
+      background: var(--brand-light);
+      color: var(--brand-primary);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      font-size: 0.9rem;
+      margin: 0 auto 12px;
+    }
+
+    .process-step h4 {
+      font-size: 1.05rem;
+      font-weight: 800;
+      margin-bottom: 6px;
+      color: var(--text-main);
+    }
+
+    .process-step p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* ==========================================================================
+       聯絡行動區 (#contact)
+       ========================================================================== */
+    .contact-section {
+      padding: 96px 0;
+      background-color: #ffffff;
+    }
+
+    .contact-panel {
+      background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+      color: #ffffff;
+      border-radius: 28px;
+      padding: 64px 48px;
+      box-shadow: var(--shadow-xl);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contact-panel::before {
+      content: "";
+      position: absolute;
+      top: -30%;
+      right: -10%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(99, 102, 241, 0.25) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .contact-title {
+      font-size: clamp(2rem, 3.5vw, 2.75rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+    }
+
+    .contact-desc {
+      color: #cbd5e1;
+      font-size: 1.12rem;
+      max-width: 620px;
+      margin: 0 auto 36px;
+      line-height: 1.7;
+    }
+
+    .contact-form-wrapper {
+      max-width: 680px;
+      margin: 0 auto 36px;
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      text-align: left;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-bottom: 18px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .form-group label {
+      font-size: 0.88rem;
+      color: #e2e8f0;
+      font-weight: 600;
+    }
+
+    .form-control {
+      height: 46px;
+      border-radius: var(--radius-sm);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: rgba(255, 255, 255, 0.95);
+      color: var(--text-main);
+      padding: 0 14px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .form-control:focus {
+      border-color: #818cf8;
+      box-shadow: 0 0 0 3px rgba(129, 140, 248, 0.35);
+    }
+
+    textarea.form-control {
+      height: 88px;
+      padding-top: 10px;
+      resize: vertical;
+    }
+
+    .contact-actions {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    /* ==========================================================================
+       常見問題 FAQ 手風琴
+       ========================================================================== */
+    .faq-section {
+      padding: 80px 0;
+      background-color: var(--bg-subtle);
+      border-top: 1px solid var(--border-color);
+    }
+
+    .faq-accordion {
+      max-width: 760px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .faq-item {
+      background: #ffffff;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .faq-question {
+      padding: 20px 24px;
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: var(--text-main);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+    }
+
+    .faq-question::after {
+      content: "+";
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: var(--brand-primary);
+      transition: transform 0.2s;
+    }
+
+    .faq-item.active .faq-question::after {
+      content: "−";
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 0 24px 22px;
+      color: var(--text-sub);
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    /* ==========================================================================
+       頁尾 (Site Footer)
+       ========================================================================== */
+    .site-footer {
+      background-color: #ffffff;
+      border-top: 1px solid var(--border-color);
+      padding: 48px 0 32px;
+    }
+
+    .footer-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 24px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--border-color);
+      margin-bottom: 24px;
+    }
+
+    .footer-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      font-size: 1.15rem;
+    }
+
+    .footer-tagline {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    /* ==========================================================================
+       響應式設計 (RWD Media Queries)
+       ========================================================================== */
+    @media (max-width: 992px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+      }
+      .hero-content {
+        margin: 0 auto;
+      }
+      .hero-actions {
+        justify-content: center;
+      }
+      .hero-highlights {
+        justify-content: center;
+      }
+      .features-grid, .builds-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .configurator-box {
+        grid-template-columns: 1fr;
+      }
+      .process-steps {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links li:not(:last-child) {
+        display: none;
+      }
+      .features-grid, .builds-grid {
+        grid-template-columns: 1fr;
+      }
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+      .contact-panel {
+        padding: 42px 20px;
+      }
+      .contact-form-wrapper {
+        padding: 22px 16px;
+      }
+      .process-steps {
+        grid-template-columns: 1fr;
+      }
+      .footer-content, .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
   </style>
 </head>
 <body id="top">
-  <header class="site-header"><div class="wrap nav">
-    <a class="brand" href="#top" aria-label="小巴電腦，回到頁首"><span class="brand-mark" aria-hidden="true">小</span><span>小巴電腦</span></a>
-    <nav class="nav-links" aria-label="主要導覽"><a class="nav-item-about" href="#about">品牌介紹</a><a class="nav-item-builds" href="#builds">主機提案</a><a class="nav-cta" href="#contact">開始客製</a></nav>
-  </div></header>
+
+  <!-- ========================================================================
+       4.1 頂部導覽列
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-wrapper" aria-label="主要導覽">
+        <a href="#top" class="brand-logo" aria-label="小巴電腦 回到頁首">
+          <span class="brand-badge" aria-hidden="true">小</span>
+          <span>小巴電腦</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#about">品牌介紹</a></li>
+          <li><a href="#builds">主機提案</a></li>
+          <li><a href="#configurator">線上估價</a></li>
+          <li><a href="#faq">常見問答</a></li>
+          <li><a href="#contact" class="btn btn-primary" style="min-height: 40px; padding: 0 18px; font-size: 0.88rem;">開始客製</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
   <main>
-    <section class="hero" aria-labelledby="hero-title"><div class="wrap hero-grid">
-      <div class="hero-copy"><p class="eyebrow">為你的每種玩法量身打造</p><h1 id="hero-title">理想的電腦，<br><span>從你的需求開始。</span></h1><p>小巴電腦陪你從零組件與機殼開始，組出適合自己的主機。無論是遊戲、創作或日常使用，都能找到效能與預算的好平衡。</p><div class="hero-actions"><a class="button button-primary" href="#builds">看看主機提案</a><a class="button button-secondary" href="#about">認識小巴電腦</a></div></div>
-      <div class="hero-art" role="img" aria-label="深色電腦機殼內有兩個藍紫色發光風扇，放置在淡紫色底座上"><div class="art-glow"></div><div class="pedestal"></div><div class="tower"><div class="glass"><div class="fan"></div><div class="fan"></div></div><div class="front"><i class="power"></i><i class="led"></i><i class="mesh"></i></div></div><div class="spec spec-one"><strong>依需求挑選</strong><span>每個零件都由你決定</span></div><div class="spec spec-two"><strong>從入門到高效能</strong><span>預算配置更有彈性</span></div></div>
-    </div></section>
-    <section class="section" id="about" aria-labelledby="about-title"><div class="wrap"><div class="section-heading"><p class="eyebrow">小巴電腦的堅持</p><h2 id="about-title">自己組，更貼近自己的需要</h2><p>我們相信，一台好電腦應該符合你的使用方式、喜好與預算。</p></div><div class="cards">
-      <article class="card"><div class="feature-icon" aria-hidden="true">🧩</div><h3>自由客製配件</h3><p>從處理器、顯示卡到機殼外觀，依照用途搭配合適的零件。</p></article>
-      <article class="card"><div class="feature-icon" aria-hidden="true">🎯</div><h3>按預算規劃</h3><p>先確認最在意的需求，再把預算花在真正有感的效能上。</p></article>
-      <article class="card"><div class="feature-icon" aria-hidden="true">🛠️</div><h3>組裝入門友善</h3><p>不確定怎麼選也沒關係，從清楚的配置方向開始，逐步完成你的主機。</p></article>
-    </div></div></section>
-    <section class="section builds-section" id="builds" aria-labelledby="builds-title"><div class="wrap"><div class="section-heading"><p class="eyebrow">找到你的起點</p><h2 id="builds-title">依照使用情境，開始規劃</h2><p>以下是配置方向示意，實際零件可依需求自由調整。</p></div><div class="cards">
-      <article class="card build-card"><div class="build-emoji" aria-hidden="true">🖥️</div><span class="category">日常入門</span><h3>輕鬆工作與學習</h3><p>適合文書、上網、影音與日常多工使用。</p><a class="build-link" href="#contact">規劃這類主機 →</a></article>
-      <article class="card build-card"><div class="build-emoji" aria-hidden="true">🎮</div><span class="category">遊戲娛樂</span><h3>沉浸遊戲體驗</h3><p>依照遊戲類型與螢幕需求，平衡畫質與流暢度。</p><a class="build-link" href="#contact">規劃這類主機 →</a></article>
-      <article class="card build-card"><div class="build-emoji" aria-hidden="true">🎨</div><span class="category">創作效能</span><h3>專注創作流程</h3><p>為影像剪輯、繪圖或內容製作挑選合適效能。</p><a class="build-link" href="#contact">規劃這類主機 →</a></article>
-    </div></div></section>
-    <section class="contact-section" id="contact" aria-labelledby="contact-title"><div class="wrap"><div class="contact-panel"><h2 id="contact-title">準備好組出你的理想主機了嗎？</h2><p>告訴我們你想做什麼、預算大約多少，從第一步開始規劃。</p><a class="button button-light" href="mailto:hello@xiaoba-pc.example?subject=%E5%B0%8F%E5%B7%B4%E9%9B%BB%E8%85%A6%E5%AE%A2%E8%A3%BD%E9%9C%80%E6%B1%82">詢問客製配置</a></div></div></section>
+    <!-- ======================================================================
+         4.2 首頁主視覺 (Hero Section)
+         ====================================================================== -->
+    <section class="hero-section" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- 左欄：文案與行動按鈕 -->
+          <div class="hero-content">
+            <span class="section-tag">為你的每種玩法量身打造以及量身客製</span>
+            <h1 id="hero-title" class="hero-title">
+              小巴電腦客製組裝，<br>
+              <span>打造你的理想效能</span>
+            </h1>
+            <p class="hero-desc">
+              小巴電腦陪你從零組件與機殼開始，組出適合自己的主機。無論是電競遊戲、專業創作或日常多工，都能找到效能與預算的好平衡。
+            </p>
+            <div class="hero-actions">
+              <a href="#builds" class="btn btn-primary">看看主機提案</a>
+              <a href="#configurator" class="btn btn-secondary">線上規格估價</a>
+              <a href="#about" class="btn btn-secondary">認識小巴電腦</a>
+            </div>
+            <div class="hero-highlights">
+              <div class="highlight-item">
+                <span class="highlight-icon">✓</span> 100% 全新正品零件
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">✓</span> 48小時壓力燒機測試
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">✓</span> 終身硬體諮詢服務
+              </div>
+            </div>
+          </div>
+
+          <!-- 右欄：純 CSS 繪製雪白海景房電腦主機視覺 -->
+          <div class="hero-art-wrapper" role="img" aria-label="小巴電腦純白客製化桌上型主機示意圖，具備 ARGB 幻彩風扇與側透鋼化玻璃">
+            <div class="art-halo"></div>
+            <div class="pc-podium"></div>
+
+            <div class="pc-tower">
+              <div class="pc-glass">
+                <div class="pc-fan"></div>
+                <div class="pc-aio-block">28°C</div>
+                <div class="pc-fan"></div>
+              </div>
+              <div class="pc-front-panel">
+                <div class="pc-power" title="電源指示"></div>
+                <div class="pc-led"></div>
+                <div class="pc-mesh"></div>
+              </div>
+            </div>
+
+            <!-- 兩張資訊浮動卡片 -->
+            <div class="spec-card spec-card-1">
+              <strong>依需求挑選</strong>
+              <span>每個零件都由你決定</span>
+            </div>
+            <div class="spec-card spec-card-2">
+              <strong>從入門到高效能</strong>
+              <span>預算配置更有彈性</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         4.3 品牌特色 (#about)
+         ====================================================================== -->
+    <section id="about" class="features-section" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">小巴電腦的堅持</span>
+          <h2 id="about-title">自己組，更貼近自己的需要</h2>
+          <p>我們相信，一台好電腦應該符合你的使用方式、喜好與預算。</p>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature-card">
+            <div class="feature-icon-wrapper" aria-hidden="true">🧩</div>
+            <h3>自由客製配件</h3>
+            <p>從處理器、顯示卡到機殼外觀，依照用途搭配合適的零件，不強迫綁定不需要的高價配件。</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon-wrapper" aria-hidden="true">🎯</div>
+            <h3>按預算規劃</h3>
+            <p>先確認最在意的需求，再把每一分預算花在真正有感的效能上，讓性價比達到最頂點。</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon-wrapper" aria-hidden="true">🛠️</div>
+            <h3>組裝入門友善</h3>
+            <p>不確定怎麼選也沒關係！從清楚的配置方向開始，提供一對一專業諮詢，逐步完成你的專屬主機。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         4.4 主機提案 (#builds)
+         ====================================================================== -->
+    <section id="builds" class="builds-section" aria-labelledby="builds-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">找到你的起點</span>
+          <h2 id="builds-title">依照使用情境，開始規劃</h2>
+          <p>以下是配置方向示意，實際零件可依需求自由調整。</p>
+        </div>
+
+        <div class="builds-grid">
+          
+          <!-- 提案 1：日常入門 -->
+          <article class="build-card">
+            <div class="build-card-top">
+              <span class="build-emoji-badge" aria-hidden="true">🖥️</span>
+              <br>
+              <span class="build-category-tag">日常入門</span>
+              <h3 class="build-title">輕鬆工作與學習</h3>
+              <p class="build-desc">適合文書處理、網頁瀏覽、4K 高畫質影音播放與日常多工處理，安靜省電兼具穩定度。</p>
+              
+              <ul class="build-specs-list">
+                <li><span>處理器</span> <strong>Intel Core i5-14400</strong></li>
+                <li><span>顯示核心</span> <strong>Intel UHD 730 內顯</strong></li>
+                <li><span>記憶體</span> <strong>16GB DDR5 5600</strong></li>
+                <li><span>固態硬碟</span> <strong>1TB PCIe 4.0 SSD</strong></li>
+              </ul>
+            </div>
+            <div class="build-card-footer">
+              <div class="build-price">NT$ 16,800 <small>起</small></div>
+              <a href="#contact" class="build-link">規劃這類主機 →</a>
+            </div>
+          </article>
+
+          <!-- 提案 2：遊戲娛樂 -->
+          <article class="build-card" style="border-color: var(--brand-border);">
+            <div class="build-card-top">
+              <span class="build-emoji-badge" aria-hidden="true">🎮</span>
+              <br>
+              <span class="build-category-tag">熱門推薦・遊戲娛樂</span>
+              <h3 class="build-title">沉浸遊戲體驗</h3>
+              <p class="build-desc">依照熱門 3A 大作與 2K/4K 電競螢幕需求，平衡超高畫質、光線追蹤與極致流暢幀率。</p>
+
+              <ul class="build-specs-list">
+                <li><span>處理器</span> <strong>AMD Ryzen 5 7500F</strong></li>
+                <li><span>顯示卡</span> <strong>GeForce RTX 4060 Ti 8G</strong></li>
+                <li><span>記憶體</span> <strong>32GB (16G*2) DDR5</strong></li>
+                <li><span>固態硬碟</span> <strong>1TB Gen4 M.2 NVMe</strong></li>
+              </ul>
+            </div>
+            <div class="build-card-footer">
+              <div class="build-price">NT$ 32,900 <small>起</small></div>
+              <a href="#contact" class="build-link">規劃這類主機 →</a>
+            </div>
+          </article>
+
+          <!-- 提案 3：創作效能 -->
+          <article class="build-card">
+            <div class="build-card-top">
+              <span class="build-emoji-badge" aria-hidden="true">🎨</span>
+              <br>
+              <span class="build-category-tag">專業旗艦・創作效能</span>
+              <h3 class="build-title">專注創作流程</h3>
+              <p class="build-desc">為 4K/8K 影像剪輯、3D 建模渲染或內容製作挑選頂尖多核心與巨量記憶體，工作不卡頓。</p>
+
+              <ul class="build-specs-list">
+                <li><span>處理器</span> <strong>Intel Core i7-14700K</strong></li>
+                <li><span>顯示卡</span> <strong>GeForce RTX 4070 Ti SUPER</strong></li>
+                <li><span>記憶體</span> <strong>64GB (32G*2) DDR5</strong></li>
+                <li><span>固態硬碟</span> <strong>2TB Gen4 高速讀寫</strong></li>
+              </ul>
+            </div>
+            <div class="build-card-footer">
+              <div class="build-price">NT$ 59,800 <small>起</small></div>
+              <a href="#contact" class="build-link">規劃這類主機 →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         線上即時客製估價器 (#configurator)
+         ====================================================================== -->
+    <section id="configurator" class="configurator-section" aria-labelledby="config-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">即時透明報價</span>
+          <h2 id="config-title">客製組裝試算估價器</h2>
+          <p>自由選擇你想要的硬體等級，系統將即時計算參考價格與建議配電。</p>
+        </div>
+
+        <div class="configurator-box">
+          <div class="config-options">
+            <div class="config-group">
+              <label for="cfg-cpu">1. 核心處理器 (CPU)</label>
+              <select id="cfg-cpu" class="config-select" onchange="updatePCPrice()">
+                <option value="6000" data-name="Intel Core i5-14400 (10核/16緒)">Intel Core i5-14400 (+NT$ 6,000)</option>
+                <option value="5500" data-name="AMD Ryzen 5 7500F (6核/12緒)" selected>AMD Ryzen 5 7500F (+NT$ 5,500)</option>
+                <option value="12800" data-name="Intel Core i7-14700K (20核/28緒)">Intel Core i7-14700K (+NT$ 12,800)</option>
+                <option value="18500" data-name="AMD Ryzen 7 7800X3D (電競神U)">AMD Ryzen 7 7800X3D (+NT$ 18,500)</option>
+              </select>
+            </div>
+
+            <div class="config-group">
+              <label for="cfg-gpu">2. 獨立顯示卡 (GPU)</label>
+              <select id="cfg-gpu" class="config-select" onchange="updatePCPrice()">
+                <option value="0" data-name="處理器內顯 (文書適用)">處理器內置顯卡 (NT$ 0)</option>
+                <option value="9500" data-name="NVIDIA RTX 4060 8G">NVIDIA RTX 4060 8G (+NT$ 9,500)</option>
+                <option value="13800" data-name="NVIDIA RTX 4060 Ti 8G (純白款)" selected>NVIDIA RTX 4060 Ti 8G 純白款 (+NT$ 13,800)</option>
+                <option value="28500" data-name="NVIDIA RTX 4070 Ti SUPER 16G">NVIDIA RTX 4070 Ti SUPER 16G (+NT$ 28,500)</option>
+                <option value="36900" data-name="NVIDIA RTX 4080 SUPER 16G (白化旗艦)">NVIDIA RTX 4080 SUPER 16G 白化旗艦 (+NT$ 36,900)</option>
+              </select>
+            </div>
+
+            <div class="config-group">
+              <label for="cfg-ram">3. 記憶體容量 (RAM)</label>
+              <select id="cfg-ram" class="config-select" onchange="updatePCPrice()">
+                <option value="1800" data-name="16GB (8G*2) DDR5-5600">16GB (8G*2) DDR5-5600 (+NT$ 1,800)</option>
+                <option value="3400" data-name="32GB (16G*2) DDR5-6000 白色散熱片" selected>32GB (16G*2) DDR5-6000 白色散熱片 (+NT$ 3,400)</option>
+                <option value="6800" data-name="64GB (32G*2) DDR5-6000 創作者首選">64GB (32G*2) DDR5-6000 創作者首選 (+NT$ 6,800)</option>
+              </select>
+            </div>
+
+            <div class="config-group">
+              <label for="cfg-ssd">4. 固態硬碟容量 (SSD)</label>
+              <select id="cfg-ssd" class="config-select" onchange="updatePCPrice()">
+                <option value="2300" data-name="1TB M.2 PCIe 4.0 NVMe (7000MB/s)" selected>1TB M.2 PCIe 4.0 NVMe (+NT$ 2,300)</option>
+                <option value="4400" data-name="2TB M.2 PCIe 4.0 NVMe (高速大容量)">2TB M.2 PCIe 4.0 NVMe (+NT$ 4,400)</option>
+              </select>
+            </div>
+
+            <div class="config-group">
+              <label for="cfg-case">5. 機殼與散熱風格</label>
+              <select id="cfg-case" class="config-select" onchange="updatePCPrice()">
+                <option value="2400" data-name="極簡白・靜音緊湊型機殼">極簡白・靜音緊湊型機殼 (+NT$ 2,400)</option>
+                <option value="4200" data-name="全景雪白海景房 + 240水冷 ARGB" selected>全景雪白海景房 + 240水冷 ARGB (+NT$ 4,200)</option>
+                <option value="6500" data-name="頂級無立柱雙面玻璃海景房 + 360白色水冷">頂級無立柱雙面玻璃海景房 + 360白色水冷 (+NT$ 6,500)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="config-summary">
+            <div>
+              <h3>選配明細與推薦配置</h3>
+              <ul id="cfg-receipt" class="config-receipt">
+                <li><span>基本底板與電源</span> <strong>NT$ 5,000</strong></li>
+                <li><span>處理器</span> <strong id="rec-cpu">AMD Ryzen 5 7500F</strong></li>
+                <li><span>顯示卡</span> <strong id="rec-gpu">RTX 4060 Ti 8G</strong></li>
+                <li><span>記憶體</span> <strong id="rec-ram">32GB DDR5-6000</strong></li>
+                <li><span>硬碟儲存</span> <strong id="rec-ssd">1TB M.2 NVMe</strong></li>
+                <li><span>機殼外觀</span> <strong id="rec-case">全景雪白海景房</strong></li>
+              </ul>
+              <div style="font-size: 0.88rem; color: var(--text-muted); background: #ffffff; padding: 12px; border-radius: var(--radius-sm); border: 1px solid var(--border-color);">
+                💡 推薦電源供應器瓦數：<strong id="rec-psu" style="color: var(--brand-primary);">650W ~ 750W 金牌</strong>
+              </div>
+            </div>
+
+            <div>
+              <div class="config-total">
+                <span>預估組裝總價</span>
+                <span id="config-total-val" class="config-total-val">NT$ 34,200</span>
+              </div>
+              <button type="button" onclick="applyConfigToForm()" class="btn btn-primary" style="width: 100%; margin-top: 18px;">
+                將此配置帶入預約諮詢 →
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         組裝服務 5 大流程
+         ====================================================================== -->
+    <section class="process-section">
+      <div class="container">
+        <div class="section-header" style="margin-bottom: 40px;">
+          <span class="section-tag">品質保障</span>
+          <h2>小巴電腦組裝 5 步流程</h2>
+          <p>從需求確認到整機送達，每一個細節都不馬虎。</p>
+        </div>
+
+        <div class="process-steps">
+          <div class="process-step">
+            <div class="step-num">1</div>
+            <h4>需求訪談</h4>
+            <p>確認用途與預算，給予最佳零件搭配建議。</p>
+          </div>
+          <div class="process-step">
+            <div class="step-num">2</div>
+            <h4>全新品質檢</h4>
+            <p>100% 台灣公司貨，原廠盒裝全配件交件附上。</p>
+          </div>
+          <div class="process-step">
+            <div class="step-num">3</div>
+            <h4>極致理線</h4>
+            <p>美觀與風道兼具的走線工藝，賞心悅目。</p>
+          </div>
+          <div class="process-step">
+            <div class="step-num">4</div>
+            <h4>極限燒機</h4>
+            <p>AIDA64 + FurMark 壓力測試，確保絕不藍屏。</p>
+          </div>
+          <div class="process-step">
+            <div class="step-num">5</div>
+            <h4>安全配送</h4>
+            <p>雙層氣柱防震包材，全省宅配或門市取件。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         4.5 聯絡行動區 (#contact)
+         ====================================================================== -->
+    <section id="contact" class="contact-section" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-panel">
+          <h2 id="contact-title" class="contact-title">準備好組出你的理想主機了嗎？</h2>
+          <p class="contact-desc">
+            告訴我們你想玩的遊戲、工作軟體或大致預算，專業工程師將於 24 小時內為你規劃專屬菜單。
+          </p>
+
+          <form id="inquiry-form" class="contact-form-wrapper" onsubmit="handleInquirySubmit(event)">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="contact-name">您的稱呼 *</label>
+                <input type="text" id="contact-name" class="form-control" placeholder="例：陳先生 / 林小姐" required>
+              </div>
+              <div class="form-group">
+                <label for="contact-phone">聯絡電話 / LINE ID *</label>
+                <input type="text" id="contact-phone" class="form-control" placeholder="例：0912-345-678" required>
+              </div>
+            </div>
+
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="contact-budget">預計預算區間</label>
+                <select id="contact-budget" class="form-control">
+                  <option value="20000以下">NT$ 20,000 以下 (入門文書/輕電競)</option>
+                  <option value="20000-35000" selected>NT$ 20,000 ~ 35,000 (主流電競首選)</option>
+                  <option value="35000-50000">NT$ 35,000 ~ 50,000 (高畫質3A/輕度剪輯)</option>
+                  <option value="50000以上">NT$ 50,000 以上 (頂級效能/海景房水冷)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="contact-usage">主要用途</label>
+                <select id="contact-usage" class="form-control">
+                  <option value="gaming" selected>3A 遊戲電競 / 模擬器多開</option>
+                  <option value="creator">影音剪輯 / 3D 動畫 / 渲染</option>
+                  <option value="office">文書辦公 / 上課學習 / 股票看盤</option>
+                  <option value="ai">AI 深度學習 / 本地大模型運算</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 20px;">
+              <label for="contact-notes">想玩的遊戲、特定零件需求或機殼外觀偏好</label>
+              <textarea id="contact-notes" class="form-control" placeholder="例：想玩黑神話悟空希望能跑2K高畫質，想要白色海景房機殼..."></textarea>
+            </div>
+
+            <div class="contact-actions">
+              <button type="submit" class="btn btn-white" style="font-size: 1rem; padding: 0 32px;">
+                🚀 送出需求・免費取得菜單
+              </button>
+              <a class="btn" style="background: rgba(255, 255, 255, 0.15); color: #ffffff;" href="mailto:hello@xiaoba-pc.example?subject=%E5%B0%8F%E5%B7%B4%E9%9B%BB%E8%85%A6%E5%AE%A2%E8%A3%BD%E9%9C%80%E6%B1%82">
+                直接 Email 詢問
+              </a>
+            </div>
+            <div id="form-feedback" style="display: none; text-align: center; margin-top: 16px; color: #a7f3d0; font-weight: 700;"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         常見問答 FAQ (#faq)
+         ====================================================================== -->
+    <section id="faq" class="faq-section" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">解開疑問</span>
+          <h2 id="faq-title">常見問答 FAQ</h2>
+          <p>第一次客製電腦？這裡整理了大家最常問的問題。</p>
+        </div>
+
+        <div class="faq-accordion">
+          <div class="faq-item active" onclick="toggleFaq(this)">
+            <div class="faq-question">零組件享有原廠保固嗎？小巴電腦有提供店家保固嗎？</div>
+            <div class="faq-answer">
+              所有零件均為台灣代理商全新公司貨，享有原廠 3~5 年保固。此外，小巴電腦額外提供「整機首年硬體免費代送與故障檢測」以及「終身遠端技術諮詢服務」，讓您組裝無後顧之憂。
+            </div>
+          </div>
+
+          <div class="faq-item" onclick="toggleFaq(this)">
+            <div class="faq-question">如果我自己有某些舊零件（例如顯卡或SSD），可以帶來請你們代組嗎？</div>
+            <div class="faq-answer">
+              可以的！小巴電腦支援「半自備零件客製組裝」。我們在收到您的零件後會先進行基本檢測，再與其餘新挑選的零件一併安裝整線與壓力測試，僅酌收合理的組裝工本費。
+            </div>
+          </div>
+
+          <div class="faq-item" onclick="toggleFaq(this)">
+            <div class="faq-question">組裝與燒機測試大概需要幾個工作天？</div>
+            <div class="faq-answer">
+              一般常態規格於確認菜單並下訂後，通常在 2~3 個工作天內即可完成精緻整線、系統安裝與 48 小時燒機測試。若為特殊限量白色配件或自組水冷，會在報價時先行說明備料時程。
+            </div>
+          </div>
+
+          <div class="faq-item" onclick="toggleFaq(this)">
+            <div class="faq-question">外縣市宅配運送，機殼側透玻璃和內部顯卡會摔壞嗎？</div>
+            <div class="faq-answer">
+              我們採用高規格防護！機殼內部會填塞專用防震膨脹發泡氣柱袋以固定巨大顯示卡與散熱器，外箱使用雙層厚磅紙箱並黏貼多面易碎品標籤，歷年來破損率低於 0.1%，即使萬一運送破損皆由物流保價全額負責。
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer class="site-footer"><div class="wrap footer-content"><p class="footer-copy">© 2026 小巴電腦</p><p>依照你的需求，組出剛剛好的電腦。</p></div></footer>
+
+  <!-- ========================================================================
+       4.6 頁尾 (Site Footer)
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="brand-badge" aria-hidden="true" style="width: 28px; height: 28px; font-size: 0.85rem;">小</span>
+          <span>小巴電腦 Xiaoba PC</span>
+        </div>
+        <p class="footer-tagline">依照你的需求，組出適合你剛剛好的電腦。</p>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 小巴電腦. All Rights Reserved.</p>
+        <p>專業客製化電腦組裝 ｜ 白色極簡科技美學 ｜ 原廠公司貨保證</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       JavaScript 互動腳本
+       ======================================================================== -->
+  <script>
+    // 即時客製電腦價格計算器
+    function updatePCPrice() {
+      const baseSystemPrice = 5000; // 機板與金牌電源基礎價
+      const cpuSelect = document.getElementById('cfg-cpu');
+      const gpuSelect = document.getElementById('cfg-gpu');
+      const ramSelect = document.getElementById('cfg-ram');
+      const ssdSelect = document.getElementById('cfg-ssd');
+      const caseSelect = document.getElementById('cfg-case');
+
+      const cpuPrice = parseInt(cpuSelect.value, 10);
+      const gpuPrice = parseInt(gpuSelect.value, 10);
+      const ramPrice = parseInt(ramSelect.value, 10);
+      const ssdPrice = parseInt(ssdSelect.value, 10);
+      const casePrice = parseInt(caseSelect.value, 10);
+
+      const totalPrice = baseSystemPrice + cpuPrice + gpuPrice + ramPrice + ssdPrice + casePrice;
+
+      // 更新清單文字
+      document.getElementById('rec-cpu').textContent = cpuSelect.options[cpuSelect.selectedIndex].getAttribute('data-name');
+      document.getElementById('rec-gpu').textContent = gpuSelect.options[gpuSelect.selectedIndex].getAttribute('data-name');
+      document.getElementById('rec-ram').textContent = ramSelect.options[ramSelect.selectedIndex].getAttribute('data-name');
+      document.getElementById('rec-ssd').textContent = ssdSelect.options[ssdSelect.selectedIndex].getAttribute('data-name');
+      document.getElementById('rec-case').textContent = caseSelect.options[caseSelect.selectedIndex].getAttribute('data-name');
+
+      // 更新建議瓦數
+      let psuRecommendation = "550W ~ 650W";
+      if (gpuPrice >= 28000) {
+        psuRecommendation = "850W ~ 1000W 金牌";
+      } else if (gpuPrice >= 9000) {
+        psuRecommendation = "650W ~ 750W 金牌";
+      }
+      document.getElementById('rec-psu').textContent = psuRecommendation;
+
+      // 更新格式化總價
+      document.getElementById('config-total-val').textContent = 'NT$ ' + totalPrice.toLocaleString('zh-TW');
+    }
+
+    // 將估價器選配結果自動帶入聯絡表單
+    function applyConfigToForm() {
+      const cpu = document.getElementById('rec-cpu').textContent;
+      const gpu = document.getElementById('rec-gpu').textContent;
+      const ram = document.getElementById('rec-ram').textContent;
+      const ssd = document.getElementById('rec-ssd').textContent;
+      const pcCase = document.getElementById('rec-case').textContent;
+      const total = document.getElementById('config-total-val').textContent;
+
+      const notesField = document.getElementById('contact-notes');
+      notesField.value = `【線上估價菜單預約】\n• 預估總額：${total}\n• CPU：${cpu}\n• 顯示卡：${gpu}\n• 記憶體：${ram}\n• SSD：${ssd}\n• 機殼散熱：${pcCase}\n請工程師協助確認此配置與相容性！`;
+
+      // 平滑滾動到聯絡區塊並聚焦
+      document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+      document.getElementById('contact-name').focus();
+    }
+
+    // 常見問題 FAQ 開關切換
+    function toggleFaq(element) {
+      element.classList.toggle('active');
+    }
+
+    // 聯絡表單模擬提交
+    function handleInquirySubmit(event) {
+      event.preventDefault();
+      const name = document.getElementById('contact-name').value;
+      const feedback = document.getElementById('form-feedback');
+
+      feedback.style.display = 'block';
+      feedback.textContent = `🎉 感謝 ${name} 的預約！小巴電腦已收到您的菜單需求，專屬工程師將於 24 小時內與您聯繫！`;
+      
+      setTimeout(() => {
+        event.target.reset();
+      }, 3500);
+    }
+  </script>
 </body>
 </html>
+
+
+
